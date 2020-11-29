@@ -6,13 +6,14 @@ const router = new Router();
 const templateProcessor = new TemplateProcessor();
 const client = new Client();
 
-const {viewName, endpointName} = router.getCurrentState();
-
+const {viewName, endpointName} = router.getCurrentState(); 
 let  view;
-import('./views/${viewName}.js')
+console.log(viewName)
+import(`./views/${viewName}.js`)
+
 .then((viewModule) => {
     view = viewModule.default;
-    return client.getDate(endpointName);
+    return client.getData(endpointName);
 })
 .then((data) => {
     templateProcessor.render(view(data))

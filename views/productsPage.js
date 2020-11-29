@@ -1,12 +1,11 @@
-const view = (products) => 
-<div id="product">
- ${products.map((product) => 
+const view = (products) => `
+<div id="products">
+ ${products.map((product) => `
  <div class="product-item">
-     
-     <span class="product-name">${product.id}</span>
-     <span class="product-desc">${product.title}</span>
+     <span class="product-name" >${catalogue.id}</span>
+     <span class="product-desc">${catalogue.productName}</span>
  </div>
- )}
- </div>;
+ `)}
+ </div>`;
 
 export default view;
