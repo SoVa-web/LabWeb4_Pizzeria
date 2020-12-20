@@ -16,7 +16,7 @@ body {
     font-size: 50px;
 }
 
-#pizza, #drink, #side, #recommendation{
+#pizza, #drink, #side, #recommendation, #setGoods{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1vw;
@@ -74,4 +74,45 @@ p{
     height: 50px;
     margin: 10px;
     cursor: pointer;
+    background: none;
+}
+
+#orderForm{
+    text-align: center;
+    align-items: center;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.orderItem{
+display: flexbox;
+justify-self: center;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.labelForm{
+    font-size: x-large;
+}
+ .inputForm{
+  font-size: x-large;
+}
+
+#done-btn{
+    height: 50px;
+    width: 150px;
+    margin: 30px;
+    color: wheat;
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    color: wheat;
+    height: 300px;
+    margin-bottom: 0;
 }

@@ -15,6 +15,10 @@ class Router{
             viewName = `orderFormPage`
             endpointName = `orders`
             break;
+        case `cart`:
+            viewName = `cartPage`
+            endpointName = `catalogue`
+            break;
         default:
             viewName = `mainPage`;
             endpointName = `catalogue`

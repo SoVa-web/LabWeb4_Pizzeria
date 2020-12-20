@@ -1,8 +1,5 @@
-const view = (catalogues) =>
-`<div class="navbar">
-<p id="slogan">Our pizza is our conscience</p>
-<form action="#catalogue" target="_self" ><button class="btn-menu"></button></form>
-</div>
+const view = (catalogues, setGoodsInCart) =>
+`
 <div id="contenteMain">
 <button id="leftBtn"><img src="./images/leftBtn.png" style="width:45px"></button>
 <img src="./images/discountOnTuesday.jpg">

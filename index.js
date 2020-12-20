@@ -1,12 +1,12 @@
 import TemplateProcessor from './templateProcessor.js'
 import Client from './client.js'
 import Router from './router.js'
-
+import setGoodsInCart from './views/cartPage.js'
 const router = new Router();
 const templateProcessor = new TemplateProcessor();
 const client = new Client();
 
-
+let setInCart = [1]
 let  view;
 loadPage()
 function loadPage(){
@@ -24,7 +24,7 @@ import(`./views/${viewName}.js`)
 .then(
     (data) =>
     {
-      templateProcessor.render(view(data))
+      templateProcessor.render(view(data, setInCart))
     }
 )
 }
