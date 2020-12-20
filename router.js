@@ -7,15 +7,17 @@ class Router{
              viewName = `cataloguePage`
              endpointName = `catalogue`
              break;
-         case `catalog/pizza`:
-             viewName = `pizzaPage`;
-             endpointName = `posts`
+         case `home`:
+             viewName = `mainPage`;
+             endpointName = `catalogue`
              break;
-        case ` `:
-            viewName = `mainPage`
-            endpointName = `main`
+        case `order`:
+            viewName = `orderFormPage`
+            endpointName = `orders`
             break;
         default:
+            viewName = `mainPage`;
+            endpointName = `catalogue`
             break;
      }
      return {

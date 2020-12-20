@@ -3,14 +3,75 @@ body {
     margin: 0;
 }
 
-#main_page{
-    height: 50px;
-    width: 200px;
-    margin: 0;
-    background-color: aqua;
+
+.product-item{
+    border: solid 2px black;
+    text-align: center;
+    height: 400px;
+}
+
+
+.name-category{
+    text-align: center;
+    font-size: 50px;
+}
+
+#pizza, #drink, #side, #recommendation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#slogan{
+    color: white;
+    font-size: xx-large;
 }
 
 p{
-    font-size: xx-large;
-    color: aqua;
+    font-size: x-large;
+    color: rgb(4, 5, 5);
+}
+
+#contenteMain{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+#leftBtn, #rightBtn{
+    height: 50px;
+    width: 100px;
+    margin: auto;
+    background: none;
+    cursor: pointer;
+}
+
+.divider{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-menu{
+    color: blanchedalmond;
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
 }
