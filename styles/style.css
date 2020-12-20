@@ -3,7 +3,14 @@ body {
     margin: 0;
 }
 
-span{
-    font-size: 100px;
+#main_page{
+    height: 50px;
+    width: 200px;
+    margin: 0;
+    background-color: aqua;
+}
+
+p{
+    font-size: xx-large;
     color: aqua;
 }

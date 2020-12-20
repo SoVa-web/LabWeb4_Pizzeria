@@ -8,13 +8,20 @@ const client = new Client();
 
 const {viewName, endpointName} = router.getCurrentState(); 
 let  view;
-console.log(viewName)
+console.log(endpointName)
 import(`./views/${viewName}.js`)
 
-.then((viewModule) => {
-    view = viewModule.default;
-    return client.getData(endpointName);
-})
-.then((data) => {
-    templateProcessor.render(view(data))
-})
+.then(
+    (viewModule) =>
+    {
+      view = viewModule.default;
+      return client.getData(endpointName);
+    }
+)
+
+.then(
+    (data) =>
+    {
+      templateProcessor.render(view(data))
+    }
+)
