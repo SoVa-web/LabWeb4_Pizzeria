@@ -6,9 +6,11 @@ const router = new Router();
 const templateProcessor = new TemplateProcessor();
 const client = new Client();
 
-const {viewName, endpointName} = router.getCurrentState(); 
+
 let  view;
-console.log(endpointName)
+loadPage()
+function loadPage(){
+  const {viewName, endpointName} = router.getCurrentState(); 
 import(`./views/${viewName}.js`)
 
 .then(
@@ -25,3 +27,9 @@ import(`./views/${viewName}.js`)
       templateProcessor.render(view(data))
     }
 )
+}
+
+
+window.onhashchange = ()=>{
+  loadPage()
+}

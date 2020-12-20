@@ -1,5 +1,4 @@
-const view = (catalogues) =>
-`<p>`+d(catalogues)+`<p>`
+const view = (catalogues) =>d(catalogues)
 
 
 function d(c){
@@ -36,8 +35,7 @@ for(let i =0; i < c.length; i++){
 info = `<div class="navbar">
 <p id="slogan">Our pizza is our conscience</p>
 <form action="#home" target="_self" src="index.js"><button class="btn-menu">Home</button></form>
-</div>`+
-`<h2 class="name-category">Pizzas</h2><div id="pizza">`+
+</div><h2 class="name-category">Pizzas</h2><div id="pizza">`+
 pizza+`</div><h2 class="name-category">Drinks</h2><div id="drink">`+
 drink+`</div><h2 class="name-category">Sides</h2><div id="side">`+side+`</div>`
 return info
