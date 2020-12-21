@@ -142,3 +142,13 @@ footer{
 button {
     cursor: pointer;
 }
+
+#infoBacket{
+    width: 30px;
+    height: 15px;
+    background-color: red;
+    border-radius: 20px;
+    margin-left: 0;
+    text-align: center;
+    font-size: small;
+}

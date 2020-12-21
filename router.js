@@ -2,8 +2,9 @@ class Router{
  getCurrentState(){
      let viewName = ``;
      let endpointName = ``;
-     
-     switch (window.location.hash.split('#')[1]){
+     let temp = ``
+     temp = window.location.hash.split('#')[1]
+     switch (temp){
          case `catalogue`:
              viewName = `cataloguePage`
              endpointName = `catalogue`

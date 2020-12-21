@@ -65,23 +65,133 @@
           "weight": 100,
           "categoryId": 3,
           "recommended": false 
+          },
+        {
+          "id":7,
+          "url": "barbekue",
+          "productName": "Barbecue Pizza",
+          "productDescription": "Ingredients : сhicken, onion, bacon, mushrooms, mozzarella cheese, barbecue sauce",
+          "price": 195.05,
+          "images": "./images/barbekue.jpg",
+          "weight": 550,
+          "categoryId": 1,
+          "recommended": false 
+          },
+        {
+          "id":8,
+          "url": "toskana",
+          "productName": "Pizza Tuscany",
+          "productDescription": "Ingredients : сhicken, feta cheese, mozzarella cheese, cherry tomatoes, Alfredo sauce, spinach",
+          "price": 395.05,
+          "images": "./images/toskana.jpg",
+          "weight": 650,
+          "categoryId": 1,
+          "recommended": false 
+          },
+          {
+          "id":9,
+          "url": "provans",
+          "productName": "Pizza Provence",
+          "productDescription": "Ingredients : Barder Blue, ham, mozzarella, paperoni, tomato, Alfredo sauce",
+          "price": 495.05,
+          "images": "./images/provans.jpg",
+          "weight": 650,
+          "categoryId": 1,
+          "recommended": false 
+          },
+          {
+          "id":10,
+          "url": "fivecheese",
+          "productName": "Pizza Five Cheeses",
+          "productDescription": "Ingredients : Feta, Parmesan, Bergader Blue, Mozzarella, Alfredo Sauce, Cheddar",
+          "price": 595.05,
+          "images": "./images/fivecheese.jpg",
+          "weight": 650,
+          "categoryId": 1,
+          "recommended": false 
+          },
+          {
+          "id":11,
+          "url": "fuzzi",
+          "productName": "Fuzetea  ",
+          "productDescription": "Fuzetea Black tea with lemon flavorr",
+          "price": 95.05,
+          "images": "./images/fuzzi.jpg",
+          "weight": 550,
+          "categoryId": 2,
+          "recommended": false 
+          },
+          {
+          "id":12,
+          "url": "shweps",
+          "productName": "Schweppes  ",
+          "productDescription": "Schweppes Indian Tonic",
+          "price": 55.05,
+          "images": "./images/shweps.jpg",
+          "weight": 550,
+          "categoryId": 2,
+          "recommended": false
+          },
+          {
+          "id":13,
+          "url": "rich",
+          "productName": "Rich  ",
+          "productDescription": "Rich Апельсин",
+          "price": 46,
+          "images": "./images/rich.jpg",
+          "weight": 500,
+          "categoryId": 2,
+          "recommended": false
+          },
+          {
+            "id":14,
+            "url": "strips",
+            "productName": "Chicken strips ",
+            "productDescription": "Chicken strips with tomate souce",
+            "price": 119,
+            "images": "./images/strips.jpg",
+            "weight": 300,
+            "categoryId": 3,
+            "recommended": false
+          },
+          {
+            "id":15,
+            "url": "bread",
+            "productName": "Bread with sausages and tomatoes ",
+            "productDescription": "Bread with Bavarian sausages and tomatoes",
+            "price": 89.99,
+            "images": "./images/bread.jpg",
+            "weight": 300,
+            "categoryId": 3,
+            "recommended": false
+          },
+          {
+            "id":16,
+            "url": "potato",
+            "productName": "Potato slices ",
+            "productDescription": "Potato, garlic and cheese sauce",
+            "price": 59.99,
+            "images": "./images/bread.jpg",
+            "weight": 200,
+            "categoryId": 3,
+            "recommended": false
           }
   ],
   "productsCategories":[
     { "id":1,
       "url":"pizza",
       "categoryName": "Pizza", 
-      "idProducts":[1, 2, 3, 4]
+      "idProducts":[1, 2, 3, 4, 7, 8, 9, 10]
     }, 
     { "id":2,
       "url":"drinks",
       "categoryName": "Drinks", 
-      "idProducts":[5]
+      "idProducts":[5, 11, 12, 13]
     },
     { "id":3,
       "url":"sides",
       "categoryName": "Sides", 
-      "idProducts":[6]
+      "idProducts":[6, 14, 15, 16]
     }
   ],
   "orders":[]

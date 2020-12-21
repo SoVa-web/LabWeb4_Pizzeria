@@ -49,6 +49,8 @@ document.addEventListener('click',  function(e) {
     .then((json)=>json[1*temp-1])
     .then((info)=>info.price)
     .then((price)=>addPrice(price))
+
+    document.getElementById('infoBacket').innerHTML = setInCart.length
   }
 });
 
