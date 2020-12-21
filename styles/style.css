@@ -103,7 +103,7 @@ margin-bottom: 40px;
   font-size: x-large;
 }
 
-.done-btn{
+#done-btn{
     height: 50px;
     width: 150px;
     margin: 30px;

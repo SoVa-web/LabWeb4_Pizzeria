@@ -5,10 +5,15 @@ class Client{
  }   
 
  setData(endpoint, info){
-     fetch(`https://my-json-server.typicode.com/SoVa-web/LabWeb4_Pizzeria/${endpoint}`,{
+      fetch(`https://my-json-server.typicode.com/SoVa-web/LabWeb4_Pizzeria/${endpoint}`,{
          method: 'POST',
-         body:JSON.stringify(info) 
+         body:JSON.stringify(info),
+         headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+          }, 
      } )
+     .then((response) => response.json())
+     .then((json) => console.log(json));
  }
 }
 

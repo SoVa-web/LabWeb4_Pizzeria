@@ -10,7 +10,6 @@ const view = (catalogues, setGoodsInCart) =>
 <h2 class="name-category">Popular pizzas</h2>
 <div id="recommendation">`+setContent(catalogues)+`</div>
 </div>
-<div class="divider"></div>
 `
 
 function setContent(catalogue){
