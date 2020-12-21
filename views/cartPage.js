@@ -1,4 +1,4 @@
-const view = (catalogues, setGoodsInCart) =>
+const view = (catalogues, setGoodsInCart, totalPrice) =>
 `<form action="#order" target="_self" ><button class="order" class="btn-menu">Order</button></form>
 <div id="cart">
 <h2 class="name-category">Your goods</h2>

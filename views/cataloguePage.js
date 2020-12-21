@@ -1,4 +1,4 @@
-const view = (catalogues, setGoodsInCart) =>d(catalogues)
+const view = (catalogues, setGoodsInCart, totalPrice) =>d(catalogues)
 
 
 function d(c){
@@ -9,7 +9,9 @@ for(let i =0; i < c.length; i++){
      `
         <div class="product-item">
             <img  src="${c[i].images}" style="width: 300px;"/>
-            <p class="product-desc">${c[i].productName}</p>
+           <form action="#${c[i].id}"> <button class="nameIcon"><p  class="product-desc">${c[i].productName}</p></button></form>
+            <p class="info">Price (UAH)</p>
+            <p class="info">${c[i].price}</p>
             <button id="${c[i].id}" class="order" >Add to cart</button> 
         </div>
      `
@@ -19,7 +21,9 @@ for(let i =0; i < c.length; i++){
      `
         <div class="product-item">
             <img  src="${c[i].images}" style="width: 200px; "/>
-            <p class="product-desc">${c[i].productName}</p> 
+            <form action="#${c[i].id}"> <button class="nameIcon"><p  class="product-desc">${c[i].productName}</p></button></form>
+            <p class="info">Price (UAH)</p>
+            <p class="info">${c[i].price}</p>
             <button id="${c[i].id}" class="order" >Add to cart</button>
         </div>
      `
@@ -29,7 +33,9 @@ for(let i =0; i < c.length; i++){
      `
         <div class="product-item">
             <img  src="${c[i].images}" style="width: 300px; "/>
-            <p class="product-desc">${c[i].productName}</p> 
+            <form action="#${c[i].id}"> <button class="nameIcon"><p   class="product-desc">${c[i].productName}</p></button></form>
+            <p class="info">Price (UAH)</p>
+            <p class="info">${c[i].price}</p>
             <button id="${c[i].id}" class="order" >Add to cart</button>
         </div>
      `

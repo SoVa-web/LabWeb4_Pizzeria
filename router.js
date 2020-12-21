@@ -2,6 +2,7 @@ class Router{
  getCurrentState(){
      let viewName = ``;
      let endpointName = ``;
+     
      switch (window.location.hash.split('#')[1]){
          case `catalogue`:
              viewName = `cataloguePage`
@@ -16,6 +17,10 @@ class Router{
             endpointName = `orders`
             break;
         case `cart`:
+            viewName = `cartPage`
+            endpointName = `catalogue`
+            break;
+        case `product`:
             viewName = `cartPage`
             endpointName = `catalogue`
             break;

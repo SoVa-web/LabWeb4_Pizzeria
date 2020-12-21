@@ -8,7 +8,7 @@ body {
 .product-item{
     border: solid 2px black;
     text-align: center;
-    height: 400px;
+    height: 450px;
 }
 
 
@@ -38,11 +38,11 @@ body {
 
 #slogan{
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 p{
-    font-size: x-large;
+    font-size: large;
     color: rgb(4, 5, 5);
 }
 
@@ -90,10 +90,11 @@ p{
 }
 
 .orderItem{
-display: flexbox;
-justify-self: center;
+display: grid;
+grid-template-columns: 1fr 1fr;
 margin-top: 40px;
 margin-bottom: 40px;
+margin-right: 20px;
 }
 
 .labelForm{
@@ -124,4 +125,20 @@ footer{
     margin: 30px;
     color: wheat;
     background-color: rgb(66, 167, 76);
+}
+
+.info{
+    font-size: small;
+}
+
+.nameIcon{
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
 }

@@ -1,3 +1,3 @@
-const view = (catalogues, setGoodsInCart) =>``
+const view = (catalogues, setGoodsInCart, totalPrice) =>``
 
 export default view;

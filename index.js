@@ -1,7 +1,6 @@
 import TemplateProcessor from './templateProcessor.js'
 import Client from './client.js'
 import Router from './router.js'
-//import setGoodsInCart from './views/cartPage.js'
 const router = new Router();
 const templateProcessor = new TemplateProcessor();
 const client = new Client();
@@ -28,7 +27,7 @@ function loadPage(){
   .then(
     (data) =>
         {
-          templateProcessor.render(view(data, setInCart))
+          templateProcessor.render(view(data, setInCart, sum))
         }
       )
 }
@@ -40,38 +39,16 @@ window.onhashchange = ()=>{
 
 
 
-document.addEventListener('click', function(e) {
+document.addEventListener('click',  function(e) {
   let temp = e.target.id
-  sum =0
   if(1*temp > 0 && 1*temp < 100 && temp != "done-btn"){
     setInCart.push(1*temp)
     const endpointName = `catalogue` 
-    import(`./views/cataloguePage.js`)
-
-      .then(
-       (viewModule) =>
-        {
-          view = viewModule.default;
-          return client.getData(endpointName);
-         }
-        )
-
-      .then(
-        (data) =>
-         {
-          for(let j =0; j < setInCart.length; j++){ 
-             for(let i = 0; i < data.length; i++){
-                 if(data[i].id === setInCart[j]){
-                   addPrice(data[i].price)
-                   console.log(sum)
-                  }
-             }
-          }
-          return sum
-        }
-        
-      ) 
-      console.log(sum)
+     fetch(`https://my-json-server.typicode.com/SoVa-web/LabWeb4_Pizzeria/${endpointName}`)
+    .then((data) => data.json())
+    .then((json)=>json[1*temp-1])
+    .then((info)=>info.price)
+    .then((price)=>addPrice(price))
   }
 });
 
@@ -84,12 +61,20 @@ document.addEventListener('click', function create(e) {
   if(temp === "done-btn"){
     order = {
       id:orderId,
-      name:"Vasya", 
-      surname:"",
+      name:document.getElementById('name').value, 
+      surname:document.getElementById('surname').value,
+      email:document.getElementById('email').value,
+      phone:document.getElementById('phone').value,
+      city:document.getElementById('city').value,
+      street:document.getElementById('street').value,
+      numberHouse:document.getElementById('numberHouse').value,
+      dateDelivery:document.getElementById('date').value,
+      timeDelivery:document.getElementById('time').value,
       total:sum,
       productId:setInCart }
     let responseAboutSend = client.setData(`orders`, order)
-    
+    sum=0
+    setInCart = []
     orderId++
   }
   

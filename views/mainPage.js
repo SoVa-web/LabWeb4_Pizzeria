@@ -1,4 +1,4 @@
-const view = (catalogues, setGoodsInCart) =>
+const view = (catalogues, setGoodsInCart, totalPrice) =>
 `
 <div id="contenteMain">
 <button id="leftBtn"><img src="./images/leftBtn.png" style="width:45px"></button>
@@ -21,6 +21,8 @@ function setContent(catalogue){
         <div class="product-item">
             <img  src="${catalogue[i].images}" style="width: 300px; "/>
             <p class="product-desc">${catalogue[i].productName}</p> 
+            <p class="info">Price (UAH)</p>
+            <p class="info">${catalogue[i].price}</p>
             <button id="${catalogue[i].id}" class="order" >Add to cart</button>
         </div>
      `
