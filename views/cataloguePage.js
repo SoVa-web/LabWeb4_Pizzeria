@@ -8,8 +8,9 @@ for(let i =0; i < c.length; i++){
         pizza = pizza +
      `
         <div class="product-item">
-            <img id="${c[i].id}" src="${c[i].images}" style="width: 300px;"/>
-            <p class="product-desc">${c[i].productName}</p> 
+            <img  src="${c[i].images}" style="width: 300px;"/>
+            <p class="product-desc">${c[i].productName}</p>
+            <button id="${c[i].id}" class="order" >Add to cart</button> 
         </div>
      `
     }
@@ -17,8 +18,9 @@ for(let i =0; i < c.length; i++){
         drink = drink +
      `
         <div class="product-item">
-            <img id="${c[i].id}" src="${c[i].images}" style="width: 300px; "/>
+            <img  src="${c[i].images}" style="width: 200px; "/>
             <p class="product-desc">${c[i].productName}</p> 
+            <button id="${c[i].id}" class="order" >Add to cart</button>
         </div>
      `
     }
@@ -26,8 +28,9 @@ for(let i =0; i < c.length; i++){
         side = side +
      `
         <div class="product-item">
-            <img id="${c[i].id}" src="${c[i].images}" style="width: 300px; "/>
+            <img  src="${c[i].images}" style="width: 300px; "/>
             <p class="product-desc">${c[i].productName}</p> 
+            <button id="${c[i].id}" class="order" >Add to cart</button>
         </div>
      `
     }

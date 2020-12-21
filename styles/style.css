@@ -1,6 +1,7 @@
 html, body { height:100%; width: 100%; }
 body {
     margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -102,17 +103,25 @@ margin-bottom: 40px;
   font-size: x-large;
 }
 
-#done-btn{
+.done-btn{
     height: 50px;
     width: 150px;
     margin: 30px;
     color: wheat;
-    background-color: black;
+    background-color: rgb(66, 167, 76);
 }
 
 footer{
     background-color: black;
     color: wheat;
     height: 300px;
-    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.order{
+    height: 50px;
+    width: 150px;
+    margin: 30px;
+    color: wheat;
+    background-color: rgb(66, 167, 76);
 }

@@ -20,8 +20,9 @@ function setContent(catalogue){
         info = info+
         `
         <div class="product-item">
-            <img id="${catalogue[i].id}" src="${catalogue[i].images}" style="width: 300px; "/>
+            <img  src="${catalogue[i].images}" style="width: 300px; "/>
             <p class="product-desc">${catalogue[i].productName}</p> 
+            <button id="${catalogue[i].id}" class="order" >Add to cart</button>
         </div>
      `
     }
