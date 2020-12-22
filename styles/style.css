@@ -39,6 +39,8 @@ body {
 #slogan{
     color: white;
     font-size: x-large;
+    margin-left: 70px;
+    margin-right: 400px;
 }
 
 p{
@@ -76,6 +78,10 @@ p{
     margin: 10px;
     cursor: pointer;
     background: none;
+    border: none;
+    font-size: large;
+    border-bottom: solid 2px wheat;
+    outline: none;
 }
 
 #orderForm{
@@ -113,6 +119,8 @@ margin-right: 20px;
 }
 
 footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: black;
     color: wheat;
     height: 300px;
@@ -151,4 +159,34 @@ button {
     margin-left: 0;
     text-align: center;
     font-size: small;
+}
+
+.foot{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h3 {
+    font-size: x-large;
+    border-bottom: solid 2px wheat;
+}
+
+#footter-menu, #social, #contact, #payment{
+    margin: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#insta, #facebook, #visa, #mastercard, #homePage, #cataloguePage, #discountPage{
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#homePage, #cataloguePage, #discountPage{
+    color: wheat;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
 }
