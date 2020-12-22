@@ -16,6 +16,7 @@ function loadPage(){
   document.querySelector("#c").classList.toggle("anim");
   document.querySelector("#d").classList.toggle("anim");
   document.querySelector("#h").classList.toggle("anim");
+  document.querySelector("#slogan").classList.toggle("rotato1");
     const {viewName, endpointName} = router.getCurrentState(); 
     import(`./views/${viewName}.js`)
 
@@ -44,6 +45,8 @@ window.onhashchange = ()=>{
 
 document.addEventListener('click',  function(e) {
   let temp = e.target.id
+  document.querySelector("#slogan").classList.toggle("rotato2");
+  document.querySelector("#slogan").classList.toggle("rotato1");
   if(1*temp > 0 && 1*temp < 100 && temp != "done-btn"){
     setInCart.push(1*temp)
     const endpointName = `catalogue` 
@@ -97,11 +100,11 @@ document.addEventListener('click', function create(e) {
       timeDelivery:document.getElementById('time').value,
       total:sum,
       productId:setInCart }
-    let responseAboutSend = client.setData(`orders`, order)
     sum=0
     setInCart = []
     orderId++
     document.getElementById('infoBacket').innerHTML = setInCart.length
+    document.querySelector("#slogan").classList.toggle("rotato2");
   }
   
 });

@@ -1,7 +1,7 @@
 html, body { height:100%; width: 100%; }
 body {
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
 
@@ -25,6 +25,18 @@ body {
 
 }
 
+.rotato1{
+    transition-duration: 5s ;
+    transition-property: all;
+    transform: rotate(20deg);
+}
+
+.rotato2{
+    transition-duration: 5s ;
+    transition-property: all;
+    transform: rotate(0deg);
+}
+
 .product-item{
     border: solid 2px black;
     text-align: center;
@@ -36,6 +48,7 @@ body {
     border: solid 4px rgb(170, 238, 130);
     cursor: pointer;
 }
+
 
 .name-category{
     text-align: center;
@@ -265,3 +278,4 @@ h3 {
       }
   }
   
+ 
