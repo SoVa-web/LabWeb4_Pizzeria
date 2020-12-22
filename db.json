@@ -116,7 +116,7 @@
           "productName": "Fuzetea  ",
           "productDescription": "Fuzetea Black tea with lemon flavorr",
           "price": 95.05,
-          "images": "./images/fuzzi.jpg",
+          "images": "./images/fuzzi.png",
           "weight": 550,
           "categoryId": 2,
           "recommended": false 
@@ -127,7 +127,7 @@
           "productName": "Schweppes  ",
           "productDescription": "Schweppes Indian Tonic",
           "price": 55.05,
-          "images": "./images/shweps.jpg",
+          "images": "./images/shweps.png",
           "weight": 550,
           "categoryId": 2,
           "recommended": false
@@ -138,7 +138,7 @@
           "productName": "Rich  ",
           "productDescription": "Rich Апельсин",
           "price": 46,
-          "images": "./images/rich.jpg",
+          "images": "./images/rich.png",
           "weight": 500,
           "categoryId": 2,
           "recommended": false

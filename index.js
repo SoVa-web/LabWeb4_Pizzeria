@@ -78,6 +78,7 @@ document.addEventListener('click', function create(e) {
     sum=0
     setInCart = []
     orderId++
+    document.getElementById('infoBacket').innerHTML = setInCart.length
   }
   
 });
