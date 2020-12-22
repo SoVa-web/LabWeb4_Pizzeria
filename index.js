@@ -13,6 +13,9 @@ let  view;
 
 loadPage()
 function loadPage(){
+  document.querySelector("#c").classList.toggle("anim");
+  document.querySelector("#d").classList.toggle("anim");
+  document.querySelector("#h").classList.toggle("anim");
     const {viewName, endpointName} = router.getCurrentState(); 
     import(`./views/${viewName}.js`)
 
@@ -60,6 +63,26 @@ function  addPrice(def) {
 
 document.addEventListener('click', function create(e) {
   let temp =  e.target.id
+  switch(temp){
+    case('d') :{
+      document.querySelector("#d").classList.toggle("animkey");
+      document.querySelector("#d").classList.toggle("anim");
+      break
+    }
+    case('h') :{
+      document.querySelector("#h").classList.toggle("animkey");
+      document.querySelector("#h").classList.toggle("anim");
+      break
+    }
+    case('c') :{
+      document.querySelector("#c").classList.toggle("anim");
+      document.querySelector("#c").classList.toggle("animkey");
+      break
+    }
+    default:{break}
+  }
+    
+  
   if(temp === "done-btn"){
     order = {
       id:orderId,
@@ -82,3 +105,4 @@ document.addEventListener('click', function create(e) {
   }
   
 });
+

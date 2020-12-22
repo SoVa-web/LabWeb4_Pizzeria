@@ -11,6 +11,11 @@ body {
     height: 450px;
 }
 
+.product-item :hover{
+    background-color: rgb(188, 238, 130);
+    border: solid 4px rgb(170, 238, 130);
+    cursor: pointer;
+}
 
 .name-category{
     text-align: center;
@@ -133,6 +138,9 @@ footer{
     margin: 30px;
     color: wheat;
     background-color: rgb(66, 167, 76);
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
 
 .info{
@@ -190,3 +198,47 @@ h3 {
     font-size: large;
     font-family: 'Times New Roman', Times, serif;
 }
+
+.animkey{
+    animation-name: left;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+}
+ .anim  {
+    animation-name: right;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+}
+
+@keyframes  left {
+    0%{
+      width: 150px;
+      height: 50px;
+    }
+    50%{
+         width: 200px;
+      height: 60px;
+    }
+    100%{
+        width: 150px;
+        height: 50px;
+    }
+  }
+
+  @keyframes  right {
+    0%{
+        width: 150px;
+        height: 50px;
+      }
+      50%{
+           width: 200px;
+        height: 60px;
+      }
+      100%{
+          width: 150px;
+          height: 50px;
+      }
+  }
+  
