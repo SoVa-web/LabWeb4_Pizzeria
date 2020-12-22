@@ -13,6 +13,14 @@ let  view;
 
 loadPage()
 function loadPage(){
+  if(JSON.parse(localStorage.getItem('cart'))===null){
+    var serialObj = JSON.stringify(setInCart);
+  localStorage.setItem('cart', serialObj)
+  setInCart = JSON.parse(localStorage.getItem('cart'))
+  }else{
+setInCart = JSON.parse(localStorage.getItem('cart'))
+  }
+  document.getElementById('infoBacket').innerHTML = setInCart.length
   document.querySelector("#c").classList.toggle("anim");
   document.querySelector("#d").classList.toggle("anim");
   document.querySelector("#h").classList.toggle("anim");
@@ -49,6 +57,8 @@ document.addEventListener('click',  function(e) {
   document.querySelector("#slogan").classList.toggle("rotato1");
   if(1*temp > 0 && 1*temp < 100 && temp != "done-btn"){
     setInCart.push(1*temp)
+    var serialObj = JSON.stringify(setInCart);
+    localStorage.setItem('cart', serialObj)
     const endpointName = `catalogue` 
      fetch(`https://my-json-server.typicode.com/SoVa-web/LabWeb4_Pizzeria/${endpointName}`)
     .then((data) => data.json())
@@ -100,11 +110,14 @@ document.addEventListener('click', function create(e) {
       timeDelivery:document.getElementById('time').value,
       total:sum,
       productId:setInCart }
+      let responseAboutSend = client.setData(`orders`, order)
     sum=0
     setInCart = []
     orderId++
     document.getElementById('infoBacket').innerHTML = setInCart.length
     document.querySelector("#slogan").classList.toggle("rotato2");
+    var serialObj = JSON.stringify([]);
+    localStorage.setItem('cart', serialObj)
   }
   
 });
