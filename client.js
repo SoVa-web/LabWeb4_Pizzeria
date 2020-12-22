@@ -2,9 +2,7 @@ class Client{
  getData(endpoint){
      return fetch(`https://my-json-server.typicode.com/SoVa-web/LabWeb4_Pizzeria/${endpoint}`, 
      {
-        headers:{
-            'mode':'cors'
-        }
+        mode: 'cors'
      })
      .then(response => response.json())
  }   

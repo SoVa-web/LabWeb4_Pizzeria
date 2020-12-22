@@ -5,6 +5,26 @@ body {
 }
 
 
+@media all and (max-width:1250px){
+    
+#pizza, #drink, #side, #recommendation, #setGoods{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-gap: 1vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+
+#slogan{
+    color: white;
+    font-size: x-large;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+}
+
 .product-item{
     border: solid 2px black;
     text-align: center;
@@ -22,13 +42,22 @@ body {
     font-size: 50px;
 }
 
-#pizza, #drink, #side, #recommendation, #setGoods{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 1vw;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
+@media all and (min-width:1251px){
+    #pizza, #drink, #side, #recommendation, #setGoods{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 1vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    #slogan{
+        color: white;
+        font-size: x-large;
+        margin-left: 70px;
+        margin-right: 400px;
+    }
 }
 
 .navbar{
@@ -41,12 +70,6 @@ body {
     color: white;
 }
 
-#slogan{
-    color: white;
-    font-size: x-large;
-    margin-left: 70px;
-    margin-right: 400px;
-}
 
 p{
     font-size: large;
